@@ -1,84 +1,77 @@
-# Reverse-engineer malware → YARA/Sigma rule
+# Microsoft Sentinel SOC Lab
+
+## Overview
+This project demonstrates hands-on experience with Microsoft Sentinel by simulating real-world SOC analyst workflows including log collection, threat detection, incident investigation, and response activities.
 
 ## Objective
 
-Designed and implemented a controlled cybersecurity lab environment to simulate and analyze cyber attack scenarios. Configured log ingestion and monitoring within a Security Information and Event Management (SIEM) platform to detect and investigate security events. Generated test telemetry to emulate real-world attack techniques, enhancing practical knowledge of threat detection, network security, attack methodologies, and incident response processes.
+- Deploy Microsoft Sentinel
+- Configure Data Connectors
+- Analyze Security Events
+- Create KQL Hunting Queries
+- Investigate Security Incidents
+- Document Findings
 
-### Skills Learned
+### Technologies Used
 
-- Advanced understanding of SIEM concepts and practical application.
-- Proficiency in analyzing and interpreting network logs.
-- Ability to generate and recognize attack signatures and patterns.
-- Enhanced knowledge of network protocols and security vulnerabilities.
-- Development of critical thinking and problem-solving skills in cybersecurity.
+- Microsoft Azure
+- Microsoft Sentinel
+- Log Analytics Workspace
+- Kusto Query Language (KQL)
+- Microsoft Defender
+- Entra ID
 
-### Tools Used
+### SOC Workflow
 
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
-- Telemetry generation tools to create realistic network traffic and attack scenarios.
+- Data Collection
+      ↓
+- Analytics Rules
+      ↓
+- Alerts
+      ↓
+- Incidents
+      ↓
+- Investigation
+      ↓
+- Response
+      ↓
+- Closure
 
 ## Steps
 
-Assembly language represents the lowest level of the software execution chain. Even when source code is unavailable, various analysis and disassembly tools can translate compiled programs into assembly instructions. Every statement written in a high-level programming language is ultimately converted into one or more assembly instructions that the processor can execute.
+### Access the Overview page
 
-From a reverse engineering perspective, assembly code provides a direct view of how software operates. Since all program logic must eventually be expressed through assembly instructions, understanding assembly language is essential for analyzing and reversing software behavior.
+<img width="1858" height="957" alt="image" src="https://github.com/user-attachments/assets/996f8de5-16f2-4f82-b1d0-08dffd5a9899" />
 
-There is no single universal assembly language. Different processor architectures use different instruction sets, such as:
+Data for each section of the Overview dashboard is precalculated, and the last refresh time is shown at the top of each section.
 
-x86 (32-bit)
-x64 (64-bit)
-ARM
-PowerPC (PPC)
+### View incident data
 
-To become proficient in reverse engineering, it is necessary to understand the assembly language of the target platform. This project focuses on analyzing and understanding assembly instructions across the x86, x64, and ARM architectures, which are among the most widely used processor platforms in modern computing systems.
+The following image shows an example of the Incidents section on the Overview dashboard:
 
-<img width="740" height="399" alt="image" src="https://github.com/user-attachments/assets/6c5a0d3e-c3dc-4ce7-a1fb-ce8f7262a4f0" />
+<img width="2689" height="1250" alt="image" src="https://github.com/user-attachments/assets/fe7f5193-3103-4f0b-9103-16e465cf796f" />
 
-Code-level reverse engineering involves analyzing machine code to identify and reconstruct the underlying software logic, algorithms, and design concepts. The primary objective is to understand how a program functions when the original source code is unavailable.
+### View automation data
 
-Successful reverse engineering requires a strong understanding of several fundamental areas, including:
+workspace's automation in the Automation section of the Overview dashboard.
 
-CPU Architecture and Instruction Execution
-Operating System Internals
-Memory Management
-Software Development Processes
-Program Execution Flow
+<img width="2685" height="1232" alt="image" src="https://github.com/user-attachments/assets/bb9a689f-a49a-4b7b-b573-7a59cf0a128f" />
 
-By combining knowledge from these domains, analysts can interpret machine-level instructions and translate them into meaningful representations of the original software behavior.
+### View status of data records, data collectors, and threat intelligence
 
-To support the reverse engineering process, a variety of specialized tools are commonly used, including:
+track information on data records, data collectors, and threat intelligence.
 
-IDA Pro – Advanced disassembler and debugger for static code analysis.
-Ghidra – Open-source reverse engineering suite developed by the NSA.
-OllyDbg – Dynamic debugger widely used for Windows application analysis.
-SoftICE – Low-level system debugger for kernel and application debugging.
-Additional Analysis Tools – Various utilities for disassembly, debugging, binary inspection, and malware analysis.
+<img width="2681" height="1256" alt="image" src="https://github.com/user-attachments/assets/89485d7e-da1b-491f-8c7e-a0c3eb9aef2e" />
 
-<img width="740" height="435" alt="image" src="https://github.com/user-attachments/assets/3e84a8da-0318-4ced-b47f-0430489541f2" />
 
-System-level reverse engineering focuses on analyzing software behavior during execution by collecting information from the operating system and monitoring the interactions between the application and system resources. Unlike code-level reverse engineering, which examines machine code and program logic, system-level reverse engineering emphasizes understanding how a program behaves in a live environment.
+### Failed Logins
 
-This approach involves:
+<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/9e96148d-dfb3-437e-8e5c-03356abcd3f6" />
 
-Inspecting executable files and their properties.
-Monitoring process creation and termination.
-Tracking file system activities.
-Observing registry modifications.
-Analyzing network communications.
-Monitoring input and output operations.
-Examining interactions between the application and the operating system.
 
-A significant portion of this information is obtained through operating system monitoring and analysis tools, which provide insights into the software's runtime behavior and system impact.
 
-Commonly used tools for system-level reverse engineering include:
 
-Sysinternals Suite – A collection of advanced Windows utilities for process, memory, file system, and registry analysis.
-Tripwire – File integrity monitoring tool used to detect system and file modifications.
-lsof (List Open Files) – Utility for identifying files and resources currently accessed by running processes.
-Wireshark – Network protocol analyzer used for capturing and analyzing network traffic.
-Additional Monitoring Tools – Various utilities for process tracking, system auditing, log analysis, and behavioral monitoring.
 
-<img width="740" height="480" alt="image" src="https://github.com/user-attachments/assets/81f21294-2b4f-40b2-a178-26eca09e1854" />
+
 
 
