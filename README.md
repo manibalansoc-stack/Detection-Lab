@@ -1,4 +1,4 @@
-# Detection Lab
+# Reverse-engineer malware → YARA/Sigma rule
 
 ## Objective
 
