@@ -20,17 +20,64 @@ Designed and implemented a controlled cybersecurity lab environment to simulate 
 
 ## Steps
 
-Assembly is the lowest level in the software chain and although we don’t have access to the source code, various tools can reduce the source code to assembly. Each instruction in any higher level language must be visible to the assembly language code. There is no magic here, each instruction must be reduced to one or more assembly instructions. In most cases, we will be working with this simple assembly code when reverse engineering.
+Assembly language represents the lowest level of the software execution chain. Even when source code is unavailable, various analysis and disassembly tools can translate compiled programs into assembly instructions. Every statement written in a high-level programming language is ultimately converted into one or more assembly instructions that the processor can execute.
 
-Obviously, to be successful at reversing, we must be familiar with assembly language code. Unfortunately, there is not a single assembly language, but rather an assembly language for each type of processor (x86, x64, ARM, PPC, etc). To master reversing, we must master the assembly code of our chosen platform. In this series, we will be examining x86, x64 and ARM assembly.
+From a reverse engineering perspective, assembly code provides a direct view of how software operates. Since all program logic must eventually be expressed through assembly instructions, understanding assembly language is essential for analyzing and reversing software behavior.
+
+There is no single universal assembly language. Different processor architectures use different instruction sets, such as:
+
+x86 (32-bit)
+x64 (64-bit)
+ARM
+PowerPC (PPC)
+
+To become proficient in reverse engineering, it is necessary to understand the assembly language of the target platform. This project focuses on analyzing and understanding assembly instructions across the x86, x64, and ARM architectures, which are among the most widely used processor platforms in modern computing systems.
 
 <img width="740" height="399" alt="image" src="https://github.com/user-attachments/assets/6c5a0d3e-c3dc-4ce7-a1fb-ce8f7262a4f0" />
 
-When we do code level reversing, we are attempting to extract the software’s code concepts and algorithms from the machine code. This requires a solid understanding of such things as how the CPU works, how the operating system works and the process of software development. We will be using such tools as IDA Pro, SoftIce, Ollydbg, Ghidra and some others in this process.
+Code-level reverse engineering involves analyzing machine code to identify and reconstruct the underlying software logic, algorithms, and design concepts. The primary objective is to understand how a program functions when the original source code is unavailable.
+
+Successful reverse engineering requires a strong understanding of several fundamental areas, including:
+
+CPU Architecture and Instruction Execution
+Operating System Internals
+Memory Management
+Software Development Processes
+Program Execution Flow
+
+By combining knowledge from these domains, analysts can interpret machine-level instructions and translate them into meaningful representations of the original software behavior.
+
+To support the reverse engineering process, a variety of specialized tools are commonly used, including:
+
+IDA Pro – Advanced disassembler and debugger for static code analysis.
+Ghidra – Open-source reverse engineering suite developed by the NSA.
+OllyDbg – Dynamic debugger widely used for Windows application analysis.
+SoftICE – Low-level system debugger for kernel and application debugging.
+Additional Analysis Tools – Various utilities for disassembly, debugging, binary inspection, and malware analysis.
 
 <img width="740" height="435" alt="image" src="https://github.com/user-attachments/assets/3e84a8da-0318-4ced-b47f-0430489541f2" />
 
-System level reversing involves running tools to obtain information about the software, inspect the program, inspect the executables, and track the program’s input and output. Most of this information will come from the operating system. We will be using such tools as SysInternals Suite, Tripwire, lsof, Wireshark, and others.
+System-level reverse engineering focuses on analyzing software behavior during execution by collecting information from the operating system and monitoring the interactions between the application and system resources. Unlike code-level reverse engineering, which examines machine code and program logic, system-level reverse engineering emphasizes understanding how a program behaves in a live environment.
+
+This approach involves:
+
+Inspecting executable files and their properties.
+Monitoring process creation and termination.
+Tracking file system activities.
+Observing registry modifications.
+Analyzing network communications.
+Monitoring input and output operations.
+Examining interactions between the application and the operating system.
+
+A significant portion of this information is obtained through operating system monitoring and analysis tools, which provide insights into the software's runtime behavior and system impact.
+
+Commonly used tools for system-level reverse engineering include:
+
+Sysinternals Suite – A collection of advanced Windows utilities for process, memory, file system, and registry analysis.
+Tripwire – File integrity monitoring tool used to detect system and file modifications.
+lsof (List Open Files) – Utility for identifying files and resources currently accessed by running processes.
+Wireshark – Network protocol analyzer used for capturing and analyzing network traffic.
+Additional Monitoring Tools – Various utilities for process tracking, system auditing, log analysis, and behavioral monitoring.
 
 <img width="740" height="480" alt="image" src="https://github.com/user-attachments/assets/81f21294-2b4f-40b2-a178-26eca09e1854" />
 
