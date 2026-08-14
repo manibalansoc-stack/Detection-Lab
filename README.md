@@ -19,9 +19,7 @@ Designed and implemented a controlled cybersecurity lab environment to simulate 
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
 ## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
 
 Example below.
 
