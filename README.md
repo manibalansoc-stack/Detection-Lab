@@ -1,41 +1,47 @@
 # Enterprise SOC Detection & Threat Hunting Lab
 
 ## Overview
-This project demonstrates hands-on experience with Microsoft Sentinel by simulating real-world SOC analyst workflows including log collection, threat detection, incident investigation, and response activities.
+Designed and implemented a cloud-based Security Operations Center (SOC) lab using Microsoft Azure, Microsoft Sentinel, Microsoft Defender XDR, and Kusto Query Language (KQL). The lab was built to simulate real-world cybersecurity monitoring and incident response activities by collecting Windows security logs, detecting failed authentication attempts, generating security alerts, and investigating incidents through SIEM and XDR platforms.
+
+The environment included an Azure-hosted Windows 11 virtual machine, Azure networking components, Log Analytics Workspace, Data Collection Rules, Microsoft Sentinel, and Microsoft Defender. Security events generated from the virtual machine were ingested into Sentinel, analyzed using KQL, and converted into actionable alerts and incidents for investigation.
 
 ## Objective
 
-- Deploy Microsoft Sentinel
-- Configure Data Connectors
-- Analyze Security Events
-- Create KQL Hunting Queries
-- Investigate Security Incidents
-- Document Findings
+The primary objective of this project was to gain hands-on experience in:
+
+- Security Operations Center (SOC) workflows
+- Microsoft Sentinel SIEM administration
+- Microsoft Defender XDR operations
+- Threat hunting using KQL
+- Alert triage and incident investigation
+- Detection engineering
+- Azure cloud security monitoring
+- MITRE ATT&CK framework mapping
+- Authentication attack detection and analysis
 
 ### Technologies Used
 
+#### Cloud Platform
 - Microsoft Azure
+#### Security Tools
 - Microsoft Sentinel
+- Microsoft Defender XDR
+- Microsoft Defender Portal
+#### Monitoring Components
 - Log Analytics Workspace
+- Azure Monitor
+- Azure Workbook
+= Data Collection Rules (DCR)
+#### Infrastructure
+- Azure Virtual Machine (Windows 11)
+- Azure Virtual Network (VNet)
+- Azure Network Security Group (NSG)
+- Azure Public IP
+#### Security Framework
+- MITRE ATT&CK
+#### Query Language
 - Kusto Query Language (KQL)
-- Microsoft Defender
-- Entra ID
 
-### SOC Workflow
-
-- Data Collection
-      ↓
-- Analytics Rules
-      ↓
-- Alerts
-      ↓
-- Incidents
-      ↓
-- Investigation
-      ↓
-- Response
-      ↓
-- Closure
 
 ## Steps
 
