@@ -81,34 +81,31 @@ Achieved Points: 50/56
 
 Configured and managed Azure Network Security Groups (NSGs) to control inbound and outbound network traffic for a Windows 11 virtual machine deployed in an Azure-based SOC lab. The NSG was used to generate network activity, monitor security events, and support threat detection through Microsoft Sentinel.
 
-<img width="1918" height="915" alt="image" src="https://github.com/user-attachments/assets/3bb641c2-2d61-41da-a9ec-f86f6f9b7209" />
+<img width="959" height="432" alt="SOC 2" src="https://github.com/user-attachments/assets/b16a9171-b5d2-401e-acaa-8abb03cf871e" />
+
 
 Network Security Group
-NSG Name: Itsec01admin-nsg
-Resource Group: Virtual-SOC-Lab
-Location: Australia East
+- NSG Name: Itsec01admin-nsg
+- Resource Group: Virtual-SOC-Lab
+- Location: Australia East
 Custom Security Rules
-1 Custom Inbound Rule
-0 Custom Outbound Rules
+- 1 Custom Inbound Rule
+- 0 Custom Outbound Rules
 Associated Resources
-1 Network Interface
-0 Subnets
+- 1 Network Interface
+- 0 Subnets
 
 ### Incident Monitoring & Investigation
-<img width="1916" height="923" alt="image" src="https://github.com/user-attachments/assets/f3352da7-b64e-4f13-a755-093feaf0bfe8" />
+<img width="958" height="434" alt="SOC 3" src="https://github.com/user-attachments/assets/eff21954-96b2-4a93-a2f7-5e4cbae31c02" />
 
-
-Security Platform
-Microsoft Defender Portal
-Incident Management Dashboard
 Incidents Observed
-Total Incidents: 7
-Incident Type: 4625 Failed Logon Attempt
-Severity: Low
-Category: Credential Access
+- Total Incidents: 7
+- Incident Type: 4625 Failed Logon Attempt
+- Severity: Low
+- Category: Credential Access
 Alert Description
 
-Windows Event ID 4625 indicates:
+- Windows Event ID 4625 indicates:
 
 "An account failed to log on."
 
@@ -116,41 +113,44 @@ Windows Event ID 4625 indicates:
 
 Performed proactive threat hunting within Microsoft Defender using Kusto Query Language (KQL) to identify failed authentication attempts against Azure-hosted Windows endpoints. Developed custom hunting queries to investigate Event ID 4625 logs, enrich source IP addresses with geolocation data, and identify suspicious login activity originating from external locations.
 
-<img width="1918" height="911" alt="image" src="https://github.com/user-attachments/assets/906eb1ff-651a-45d1-a9c8-5d1e87993bcb" />
+<img width="959" height="429" alt="SOC 4" src="https://github.com/user-attachments/assets/5599e943-002f-44c2-9f4e-59e7a3bbb954" />
+
 
 
 Detection Name
 
-Failed Logon VM Detection
+- Failed Logon VM Detection
 
 Workspace
 
-vm-logs
+- vm-logs
 
 Results
-232 Events Found
-Time Range: Last 30 Days
+- 232 Events Found
+- Time Range: Last 30 Days
 Target System
 
-Itsec01admin
+- Itsec01admin
 
 Authentication Event
-4625 - An account failed to log on
+- 4625 - An account failed to log on
 
 Suspicious Source IP
-194.165.16.166
+- 194.165.16.166
 
 ### Alert Monitoring and Detection Management
 
 The alerts were generated after a custom KQL detection rule identified repeated failed login attempts against the monitored Azure virtual machine.
 
-<img width="1918" height="906" alt="image" src="https://github.com/user-attachments/assets/ec6a4dc5-3cff-481c-a0a0-36deb63abede" />
+<img width="959" height="430" alt="soc 5" src="https://github.com/user-attachments/assets/403de9c7-036e-4a88-a29d-c841c2a82a71" />
+
 
 ### Custom Detection Rule for Failed Logon Attempts
 
 Designed and implemented a custom detection rule within Microsoft Defender XDR to identify Windows Event ID 4625 failed authentication attempts. Configured alerts to detect credential access techniques, mapped detections to the MITRE ATT&CK framework, and generated actionable alerts for incident investigation and SOC monitoring activities.
 
-<img width="1918" height="918" alt="image" src="https://github.com/user-attachments/assets/fd552e70-1403-4640-93df-2b639bef8e80" />
+<img width="959" height="426" alt="SOC 6" src="https://github.com/user-attachments/assets/634bf4d0-400e-432c-b5a5-3ceae4d93097" />
+
 
 ### Azure Resource Group Architecture
 
@@ -158,5 +158,6 @@ the Virtual-SOC-Lab Resource Group, which contains all cloud resources required 
 
 The resource group serves as the centralized container for Azure infrastructure, security monitoring, log collection, networking, and threat detection components.
 
-<img width="1914" height="921" alt="image" src="https://github.com/user-attachments/assets/870f7022-6f70-4dd4-b40e-d5ab320dff09" />
+<img width="957" height="431" alt="SOC 7" src="https://github.com/user-attachments/assets/2b689560-1975-4026-a51c-797e194b6567" />
+
 
