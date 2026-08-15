@@ -49,7 +49,7 @@ The primary objective of this project was to gain hands-on experience in:
 
 Implemented and configured Microsoft Sentinel as a cloud-native Security Information and Event Management (SIEM) platform for centralized log collection, threat detection, incident monitoring, and security analytics. Connected Azure and Microsoft security data sources, monitored incidents, reviewed security posture metrics, and explored User and Entity Behavior Analytics (UEBA) capabilities.
 
-<img width="1917" height="1078" alt="image" src="https://github.com/user-attachments/assets/ad202752-14a8-4884-a434-b4ce69d10a59" />
+<img width="959" height="519" alt="SOC 1" src="https://github.com/user-attachments/assets/b0fe97d9-7a35-41f2-a49e-939721f43936" />
 
 Observations from the Dashboard
 
