@@ -1,4 +1,4 @@
-# Microsoft Sentinel SOC Lab
+# Enterprise SOC Detection & Threat Hunting Lab
 
 ## Overview
 This project demonstrates hands-on experience with Microsoft Sentinel by simulating real-world SOC analyst workflows including log collection, threat detection, incident investigation, and response activities.
