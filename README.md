@@ -64,9 +64,7 @@ track information on data records, data collectors, and threat intelligence.
 <img width="2681" height="1256" alt="image" src="https://github.com/user-attachments/assets/89485d7e-da1b-491f-8c7e-a0c3eb9aef2e" />
 
 
-### Failed Logins
 
-<img width="1400" height="788" alt="image" src="https://github.com/user-attachments/assets/9e96148d-dfb3-437e-8e5c-03356abcd3f6" />
 
 
 
